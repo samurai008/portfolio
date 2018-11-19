@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col text-center">
+      <h3>{{detail.title}}</h3>
+    </div>
+  </div>
+  <div class="row hr"></div>
+  <div class="row mb-2 p-2">
+    <div class="col text-center">
+      <span class="h6 uppercase">{{detail.stack}}</span>
+    </div>
+  </div>
+  <div class="row mt-4 pt-4">
+    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+      <img [src]="mainImage" class="img-fluid box-shadow">
+    </div>
+    <div class="col-12 col-sm-6 mt-4 mt-sm-0 d-flex flex-column justify-content-between">
+      <div class="row mb-4 mb-sm-0">
+        <div class="col" *ngFor="let img of row1">
+          <img [src]="img" class="img-thumbnail">
+        </div>
+      </div>
+      <div class="row hr w-50 d-none d-sm-block">
+
+      </div>
+      <div class="row">
+        <div class="col" *ngFor="let img of row2">
+          <img [src]="img" class="img-thumbnail">
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>

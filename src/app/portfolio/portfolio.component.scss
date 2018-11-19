@@ -1,0 +1,30 @@
+@import '../../variables.scss';
+
+.image {
+	width: 300px;
+	background: $bg-light;
+
+	.image-container {
+		height: 400px;
+		overflow: hidden;
+	}
+}
+
+.title {
+	color: $text-dark;
+}
+
+.footy {
+	color: $text-inactive;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 50%;
+}
+
+div[class*="arrow"] > button {
+	color: $text-light;
+
+	i {
+		font-size: 25px;
+	}
+}

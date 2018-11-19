@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="d-flex flex-column justify-content-left align-items-left">
+    <div class="d-flex align-items-center mt-2 mb-2" *ngFor="let skill of skillList">
+      <span class="d-block h1 icon">
+        <i *ngFor="let icon of skill.icons" [class]="icon"></i>
+      </span>
+      <span class="d-block h6 label">
+        {{skill.title}}
+      </span>
+    </div>
+  </div>
+</div>

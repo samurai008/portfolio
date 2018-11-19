@@ -1,0 +1,11 @@
+@import '../../variables.scss';
+
+.hr {
+	border: 2px solid $text-inactive;
+  width: 25px;
+  margin: 2em auto;
+}
+
+.h6 {
+  letter-spacing: $letter-spacing;
+}

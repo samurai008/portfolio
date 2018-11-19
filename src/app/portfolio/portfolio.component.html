@@ -1,0 +1,33 @@
+<div class="container flex-column flex-sm-row d-flex justify-content-center justify-content-sm-between align-items-center">
+  <div class="left-arrow d-none d-sm-block">
+    <button class="no-style-btn" (click)="goLeft(index)"><i class="fas fa-chevron-left"></i></button>
+  </div>
+
+  <div [routerLink]="['/portfolio', cId]" class="d-none d-sm-flex d-sm-block flex-column image box-shadow">
+    <div class="mb-2 image-container">
+      <img [src]="cImage" class="img-fluid">
+    </div>
+    <h3 class="title text-center mt-2 mb-2">
+      {{cTitle}}
+    </h3>
+    <div class="button mb-2 p-2 footy text-center">
+      made with {{cStack}}
+    </div>
+  </div>
+
+  <div [routerLink]="['/portfolio', work.id]" *ngFor="let work of listOfWork" class="d-flex d-sm-none flex-column image box-shadow mb-2 mt-2 item-bottom-line">
+    <!-- <div class="mb-2">
+      <img [src]="work.image" class="img-fluid">
+    </div> -->
+    <h3 class="title text-center mt-2 mb-2">
+      {{work.title}}
+    </h3>
+    <div class="button mb-2 p-2 footy text-center">
+      made with {{work.stack}}
+    </div>
+  </div>
+
+  <div class="right-arrow d-none d-sm-block">
+    <button class="no-style-btn" (click)="goRight(index)"><i class="fas fa-chevron-right"></i></button>
+  </div>
+</div>
